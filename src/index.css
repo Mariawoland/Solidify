@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "font";
+    src: url("/public/assets/lexend.ttf");
+}
+
+@font-face {
+    font-family: "spezzz";
+    src: url("/public/assets/Caesar.ttf");
+}
+
+.spezzz {
+    font-family: "spezzz";
+}
+
+* {
+    font-family: "font";
+    margin: 0;
+    padding: 0;
+}
+
+.background-1 {
+    background-image: url("../public/assets/images/img1.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.35;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+@media (max-width: 640px) {
+    .background-1 {
+        background: rgb(238 238 238);
+        filter: brightness(0.85);
+    }
+}
